@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="homeScreenBckg" fx:id="homeScreen" prefHeight="966.0" prefWidth="1311.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.HomeScreenController">
+   <children>
+      <Button fx:id="trickButton" layoutX="207.0" layoutY="546.0" mnemonicParsing="false" onAction="#addOneTrick" prefHeight="180.0" prefWidth="338.0" text="Trick" textFill="#ff6a00">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Button>
+      <Label layoutX="354.0" layoutY="97.0" prefHeight="180.0" prefWidth="564.0" text="Trick or Treat">
+         <font>
+            <Font name="Candara" size="96.0" />
+         </font>
+      </Label>
+      <TextField fx:id="qtyField" layoutX="469.0" layoutY="386.0" />
+      <Button fx:id="treatButton" layoutX="808.0" layoutY="546.0" mnemonicParsing="false" onAction="#addOneTreat" prefHeight="180.0" prefWidth="338.0" text="Treat" textFill="#b900fc">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Button>
+      <Label layoutX="505.0" layoutY="277.0" text="Quantity">
+         <font>
+            <Font size="69.0" />
+         </font>
+      </Label>
+      <Label fx:id="trickCount" layoutX="232.0" layoutY="776.0" text="Count: 0">
+         <font>
+            <Font size="66.0" />
+         </font>
+      </Label>
+      <Label fx:id="treatCount" layoutX="855.0" layoutY="793.0" text="Count: 0">
+         <font>
+            <Font size="66.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
